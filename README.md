@@ -2,7 +2,7 @@
 
 ![Veld hero: a dusk scene over a solar farm with the headline "Less paperwork. More megawatts."](docs/hero.jpg)
 
-**Live site:** _add the Vercel URL here after deploy_
+**Live site:** https://veld-five.vercel.app
 **Role:** concept, story, visual design, front-end build
 **Stack:** one HTML file, plain CSS and JavaScript, Canvas 2D. No framework, no build step, no dependencies.
 
