@@ -1059,6 +1059,20 @@ footer { border-top: 1px solid var(--line); padding-block: 64px 40px; font-size:
   document.getElementById("nav-links").addEventListener("click", e => { if (e.target.closest("a")) setMenu(false); });
   addEventListener("keydown", e => { if (e.key === "Escape" && nav.classList.contains("open")) { setMenu(false); menuBtn.focus(); } });
 
+  /* ---------- In-page links jump behind a crossfade, so sections in between don't animate on the way past ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener("click", e => {
+    const target = document.getElementById(a.hash.slice(1));
+    if (!target) return;
+    e.preventDefault();
+    const jump = () => {
+      target.scrollIntoView({ behavior: "instant" });
+      history.pushState(null, "", a.hash);
+      if (!target.hasAttribute("tabindex")) target.tabIndex = -1;
+      target.focus({ preventScroll: true });
+    };
+    !still && document.startViewTransition ? document.startViewTransition(jump) : jump();
+  }));
+
   /* ---------- Irradiance map for the Prospect pane ---------- */
   const hc = document.getElementById("heat"), h = hc.getContext("2d");
   const ramp = [[43, 33, 66], [122, 59, 86], [217, 119, 47], [242, 179, 87], [251, 231, 176]];
