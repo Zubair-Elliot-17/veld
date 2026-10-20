@@ -8,15 +8,13 @@
 
 A landing page for a company that doesn't exist: an AI platform that takes African solar and wind projects from a pin on the map to financial close.
 
-[**Live site**](https://veld-five.vercel.app) · [**Walkthrough video**](https://veld-five.vercel.app/docs/walkthrough.mp4) · [**Case study**](#the-brief)
+[**Live site**](https://veld-five.vercel.app) · [**Case study**](#the-brief)
 
 ![HTML, CSS and JavaScript](https://img.shields.io/badge/HTML%20%C2%B7%20CSS%20%C2%B7%20JS-0d0e14?style=flat-square&labelColor=0d0e14&color=f2b357)
 ![No dependencies](https://img.shields.io/badge/dependencies-none-0d0e14?style=flat-square&labelColor=0d0e14&color=8fc79a)
 ![Deployed on Vercel](https://img.shields.io/badge/deployed%20on-Vercel-0d0e14?style=flat-square&labelColor=0d0e14&color=86a8cc)
 
-<a href="https://veld-five.vercel.app/docs/walkthrough.mp4"><img src="docs/walkthrough-poster.jpg" alt="Play the 86-second narrated walkthrough of the Veld site" width="820"></a>
-
-<sub>An 86-second narrated tour of the site and the code behind it. Also in the repo as <a href="docs/walkthrough.mp4">docs/walkthrough.mp4</a>.</sub>
+<a href="https://veld-five.vercel.app"><img src="docs/home.jpg" alt="The Veld homepage" width="820"></a>
 
 </div>
 
